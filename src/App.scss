@@ -1,0 +1,39 @@
+*{margin: 0;padding: 0;font-size: 14px;font-family: '맑은 고딕';font-weight: normal;}
+button{background-color: transparent;border:none;cursor: pointer;}
+
+.App {
+  padding: 20px;
+  h1{font-size: 18px;font-weight: bold;}
+  h2{font-size: 16px;}
+
+
+  .side_nav{position: fixed;top: 0;left: 0;width: 100%;border-right:1px solid #ddd;
+    ul{
+      li{float: left;width: 7.1428%;border-bottom: 1px solid #ddd;list-style:none;
+        button{display: block;width: 100%;height: 30px;background-color: #151719;color:#fff;
+          &.a{background-color: #cc2223;}
+          &:focus{outline: none;}
+        }
+      }
+      &::after{content: "";display: block;clear: both;}
+    }
+  }
+  .contents{margin-top: 35px;}
+
+
+  .server_lst{width: 100%;border-top: 1px solid #333;border-collapse: collapse;border-spacing: 0;
+    li{padding: 10px;border-bottom: 1px solid #ddd;list-style: none;}
+  }
+
+  .n_sel{padding: 20px;text-align: center;background-color: #f7f7f7;}
+
+  dl{padding: 10px;border-bottom: 1px solid #ddd;
+    dt{float: left;width: 80px;font-weight: bold;}
+    dd{position: relative;float: right;width: calc(100% - 150px);margin-right: 50px;word-break: break-all;
+      .copy{position:absolute;right: -50px;top: -3px;display: block;margin-left: 10px;padding: 5px;border: 1px solid #666;font-size: 12px;}
+    }
+    &::after{content: "";display: block;clear: both;}
+  }
+  dl:first-child{border-top: 1px solid #333;}
+}
+
